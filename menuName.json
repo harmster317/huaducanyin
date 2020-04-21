@@ -1,0 +1,104 @@
+{
+        "id": 0,
+        "value": "套餐1",
+        "info":[ 
+          {
+            "dish_num": 0,
+            "name": "xhsjdan1",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 1,
+            "name": "xhsjdan2",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 2,
+            "name": "xhsjdan3",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 3,
+            "name": "xhsjdan4",
+            "imgSrc": "/image/xhsjd.jpg"
+          }
+        ]
+}
+{
+        "id": 1,
+        "value": "套餐2",
+        "info":[ 
+          {
+            "dish_num": 0,
+            "name": "rmqz1",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 1,
+            "name": "rmqz2",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 2,
+            "name": "rmqz3",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 3,
+            "name": "rmqz4",
+            "imgSrc": "/image/xhsjd.jpg"
+          }
+        ]
+}
+{
+        "id": 2,
+        "value": "套餐3",
+        "info":[
+          {
+            "dish_num": 0,
+            "name": "ymdx1",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 1,
+            "name": "ymdx2",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 2,
+            "name": "ymdx3",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 3,
+            "name": "ymdx4",
+            "imgSrc": "/image/xhsjd.jpg"
+          }
+        ]
+}
+{
+        "id": 3,
+        "value": "套餐4",
+        "info":[ 
+          {
+            "dish_num": 0,
+            "name": "xjdpj1",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 1,
+            "name": "xjdpj2",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 2,
+            "name": "xjdpj3",
+            "imgSrc": "/image/xhsjd.jpg"
+          },
+          {
+            "dish_num": 3,
+            "name": "xjdpj4",
+            "imgSrc": "/image/xhsjd.jpg"
+          }
+       ]
+}

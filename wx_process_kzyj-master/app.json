@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/common/dishes/dishes",
+    "pages/common/upload/upload",
+    "pages/common/about-us/about-us"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c60e16",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f2f2f2",
+    "enablePullDownRefresh": false
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "selectedColor": "#c60e16",
+    "list": [
+      {
+        "pagePath": "pages/common/dishes/dishes",
+        "iconPath": "image/common/aboutUs/dishes.png",
+        "selectedIconPath": "image/common/aboutUs/dishes-active.png",
+        "text": "查看菜品"
+      },
+      {
+        "pagePath": "pages/common/upload/upload",
+        "iconPath": "image/common/aboutUs/upload.png",
+        "selectedIconPath": "image/common/aboutUs/upload-active.png",
+        "text": "上传菜品"
+      },
+      {
+        "pagePath": "pages/common/about-us/about-us",
+        "iconPath": "image/common/aboutUs/contact-us.png",
+        "selectedIconPath": "image/common/aboutUs/contact-us-active.png",
+        "text": "联系我们"  
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

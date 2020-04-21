@@ -1,0 +1,28 @@
+<view class="container">
+    <view class="header-img-wrap">
+        <image class="header-img" src="/image/common/aboutUs/about_us.png"></image>
+    </view>
+
+    <view class="list-wrap">
+        <view class="list-wrap-inner">
+            <view class="item">
+                <!-- <image class="item-img" src="/image/customer/index/3jianhui.png"></image> -->
+                <view class="item-title f1 c5">
+                   单位：天津花都新派餐饮管理有限公司
+                </view>
+            </view>
+            <view class="item">
+                <view class="item-title f1 c5">
+                    联系电话：
+                </view>
+                <!-- <image class="item-img" src="/image/common/aboutUs/telephone.png"></image> -->
+            </view>
+            <view class="item">
+                <view class="item-title f1 c5 ct">
+                    联系地址：天津滨海高新区塘沽海洋科技园聚源路288号办公楼北楼1-2层
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- <button class="change-role-btn bgc" bindtap="changeRole">切换角色</button> -->
+</view>

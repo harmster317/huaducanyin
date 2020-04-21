@@ -1,0 +1,187 @@
+<view>
+  <swiper class="swiper-menu" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item class="swiper-imgs">
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="nav">
+  <view class="search-btn">
+    <image src="/image/search_ico.png"></image>
+  </view>
+  <view class="menu-info">
+    <view data-num="0" class="default {{num==0 ? 'active' : ''}}" bindtap="changeEvent">默认</view>
+    <view data-num="1" class="hot {{num==1 ? 'active' : ''}}" bindtap="changeEvent">今日菜单</view>
+  </view>
+</view>
+<view class="aslide-menu">
+  <scroll-view class="aslide-box" scroll-y="true" scroll-x="false">
+    <view class="{{status==0 ? 'in' : ''}}" data-index="0" bindtap="changeMenu">套餐一</view>
+    <view class="{{status==1 ? 'in' : ''}}" data-index="1" bindtap="changeMenu">套餐二</view>
+    <view class="{{status==2 ? 'in' : ''}}" data-index="2" bindtap="changeMenu">套餐三</view>
+    <view class="{{status==3 ? 'in' : ''}}" data-index="3" bindtap="changeMenu">套餐四</view>
+  </scroll-view>
+  <view class="aslide-content-section">
+    <!-- 默认菜单 -->
+    <scroll-view class="aslide-content" scroll-y="false" scroll-x="true" scroll-into-view="{{currentPosition}}" scroll-with-animation="true" bindscrolltolower="scrollBottom" wx:if="{{num==0 ? true : false}}">
+      <view id="order0" class="aslide-item">
+        <text class="aslide-item-title">套餐一</text>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img" bindtap="previewImages">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">西红柿鸡蛋</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img" bindtap="previewImages">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">西红柿鸡蛋</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">西红柿鸡蛋</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+      </view>
+      <view id="order1" class="aslide-item">
+        <text class="aslide-item-title">套餐二</text>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img" bindtap="previewImages">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">澳洲牛排</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">澳洲牛排</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">澳洲牛排</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+      </view>
+      <view id="order2" class="aslide-item">
+        <text class="aslide-item-title">套餐三</text>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">澳洲牛排</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+      </view>
+      <view id="order3" class="aslide-item">
+        <text class="aslide-item-title">套餐四</text>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">澳洲牛排</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">澳洲牛排</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">澳洲牛排</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">澳洲牛排</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">澳洲牛排</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 今日菜单 -->
+    <scroll-view class="aslide-content" scroll-y="false" scroll-x="true" scroll-into-view="{{currentPosition}}" scroll-with-animation="true" bindscrolltolower="scrollBottom" wx:elif="{{num==1 ? true : false}}">
+      <view id="order0" class="aslide-item">
+        <view class="today">
+          <text class="aslide-item-title" id="todayMenu">今日菜单</text>
+          <text id="date">{{time}}</text>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img" bindtap="previewImages">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">西红柿鸡蛋</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img" bindtap="previewImages">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">西红柿鸡蛋</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/images/food.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">西红柿鸡蛋</text>
+            <image class="cart-add" src="/images/add.png"></image>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
